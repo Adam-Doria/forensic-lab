@@ -1,0 +1,77 @@
+
+@font-face {
+    font-family: "CenturyGothic";
+    src: url(./font/gothic/gothic.ttf);
+  }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"CenturyGothic";
+}
+
+body {
+ min-height: 100vh;
+ background: linear-gradient(45deg,#021523,#344455);
+ color :aliceblue;
+ display : flex;
+ align-items: center;
+justify-content: center;
+ 
+}
+#fingerprintmark{
+    height: 100vh;
+    min-height: 300px;
+    z-index: -100;
+    position:absolute;
+    filter : opacity(0.1)
+}
+
+.todo-container {
+    text-align: center;
+    border-radius: 20px;
+    min-width: 350px;
+    width: 30%;
+    background : #344455;
+    margin: 10px;
+    padding: 10px 0;
+    box-shadow: #000000 0px 0px 6px 0px;
+    
+}
+
+.todo-container > h1 {
+    font-weight: 900;
+    text-shadow: #4892F9  -0px -0px 10px ;
+}
+
+#task,#task::placeholder {
+    margin: 10px 0;
+    padding: 8px 0;
+    width: 100%;
+    border: 2px solid rgb(182, 156, 11);
+    transition : 1s ease;
+    background: rgb(182, 156, 11);
+    font-weight: bolder;
+    text-align: center;
+    text-transform: uppercase;
+}
+.todoelement{
+    display:grid;
+    grid-template-columns: 8% 92%;
+    margin: 10px;
+    text-transform: capitalize;
+}
+.task-number{
+    margin: 5px;
+    padding: 0 5px 0 0 ;
+    background: url(./taskmarker.png) no-repeat right/cover;
+   text-align: center;
+    color: black;
+    font-weight: bolder;
+    font-style: oblique;
+
+}
+
+

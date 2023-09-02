@@ -1,0 +1,44 @@
+body {
+  text-align: center;
+  align-items: center;
+  background: url(./bg-home.jpg) no-repeat center/cover;
+  height: 100vh;
+  color: rgb(246, 241, 241);
+  position: relative;
+}
+
+.canvas {
+  text-align: center;
+}
+canvas {
+  margin: 15px;
+  border: solid 1px;
+  border: 2px solid rgb(232, 154, 10);
+  border-radius: 5%;
+  /* height: 30rem; */
+}
+
+canvas:hover{
+    cursor : crosshair
+}
+
+img {
+  visibility: hidden;
+  z-index: -5;
+  height: 0px;
+}
+
+#score {
+    color :whitesmoke;
+    position : absolute ;
+    left : 2rem; 
+    top: 5rem
+}
+
+#message {
+    font-size: 1rem;
+    color:red;
+    position : absolute;
+    bottom : 0.8rem;
+    left : 35%
+}
